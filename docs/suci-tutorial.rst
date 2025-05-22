@@ -104,6 +104,8 @@ test keys from 3GPP TS 33.501, Annex C.4. Highest priority (``0``) has a
 Profile-B (``identifier: 2``) key in key slot ``1``, which means the key
 with ``hnet_pubkey_identifier: 27``.
 
+From 3GPP TS 31.102, titled Characteristics of USIM Application, section 4.4.11.8, which describes the contents of EF SUCI_Calc_Info, a key index with a value of 1 refers to the first Network Public Key entry in the Home Network Public Key List, and so on. A Key Index with a value of 0 indicates that there is no Home Network Public Key associated with that Protection Scheme (e.g., in the case of null-scheme).
+
 .. code:: json
 
    {
