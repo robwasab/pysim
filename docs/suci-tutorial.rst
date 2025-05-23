@@ -107,8 +107,11 @@ with ``hnet_pubkey_identifier: 27``.
 From 3GPP TS 31.102, titled Characteristics of USIM Application, section 4.4.11.8, which describes the contents of EF SUCI_Calc_Info, a key index with a value of 1 refers to the first Network Public Key entry in the Home Network Public Key List, and so on. A Key Index with a value of 0 indicates that there is no Home Network Public Key associated with that Protection Scheme (e.g., in the case of null-scheme).
 
 ``identifier: 0`` refers to NULL scheme
+
 ``identifier: 1`` refers to ECIES scheme profile A
+
 ``identifier: 2`` refers to ECIES scheme profile B
+
 .. code:: json
 
    {
